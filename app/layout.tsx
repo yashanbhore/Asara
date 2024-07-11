@@ -4,6 +4,7 @@ import { Inter } from 'next/font/google'
 import './globals.css'
 import { Nunito } from 'next/font/google';
 import Navbar from './components/navbar/Navbar';
+import Modal from './components/modals/Modal';
 // import Navbar from './components/navbar/Navbar';
 // import ClientOnly from './components/ClientOnly';
 // import Modals from './components/modals/Modal';
@@ -40,6 +41,7 @@ export default async function RootLayout({
           <LoginModal />
           <RegisterModal />
           </ClientOnly> */}
+          <Modal actionLabel='Submit' title='Hello World' isOpen/>
           <Navbar/>
         <div className="pb-20 pt-28">
           {children}
